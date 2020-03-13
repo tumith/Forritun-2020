@@ -9,133 +9,133 @@ allar_haedir = {
     "SvalirTwo": [16,36,35,34,33,32],
     "SvalirThree": [24,40,37,34,33,30,27,22]
 }
-# allar_hlidar_haedir = {
-    # "SalurRightA": [11, 11],
-    # "SalurRightB": [11, 9],# 2 hjólastóla í báðum
-    # "SalurLeftD": [11, 9],# 2 hjólastóla í báðum
-    # "SalurLeftC": [11, 11],
+allar_hlidar_haedir = {
+    "SalurRightA": [11, 11],
+    "SalurRightB": [11, 9],# 2 hjólastóla í báðum
+    "SalurLeftD": [11, 9],# 2 hjólastóla í báðum
+    "SalurLeftC": [11, 11],
     
-    # "SvalirOneRightG": [11],
-    # "SvalirOneRightF": [9],
-    # "SvalirOneLeftJ": [11],
-    # "SvalirOneLeftI": [9],
+    "SvalirOneRightG": [11],
+    "SvalirOneRightF": [9],
+    "SvalirOneLeftJ": [11],
+    "SvalirOneLeftI": [9],
 
-    # "SvalirTwoRightN": [15],
-    # "SvalirTwoRightM": [4],
-    # "SvalirTwoLeftR": [15],
-    # "SvalirTwoLeftP": [4],
+    "SvalirTwoRightN": [15],
+    "SvalirTwoRightM": [4],
+    "SvalirTwoLeftR": [15],
+    "SvalirTwoLeftP": [4],
 
-    # "SvalirThreeRightT": [13],
-    # "SvalirThreeRightS": [9],
-    # "SvalirThreeLeftV": [13],
-    # "SvalirThreeLeftU": [9]
-# }
+    "SvalirThreeRightT": [13],
+    "SvalirThreeRightS": [9],
+    "SvalirThreeLeftV": [13],
+    "SvalirThreeLeftU": [9]
+}
 
 i = []
-serstoksaeti = {
-    "SalurRightA_Sérstök":{
-        "SalurRightA": [11, 11],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    },
-    "SalurRightB_Sérstök":{
-        "SalurRightB": [11, 9],
-        "Sound_mix": False,
-        "Hjola_stóla": True,
-        "Svið_extent": False
-    },
-    "SalurRightC_Sérstök":{
-        "SalurLeftC": [11, 11],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    },
-    "SalurRightD_Sérstök":{
-        "SalurLeftD": [11, 9],
-        "Sound_mix": False,
-        "Hjola_stóla": True,
-        "Svið_extent": False
-    },
+# serstoksaeti = {
+#     "SalurRightA_Sérstök":{
+#         "SalurRightA": [11, 11],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     },
+#     "SalurRightB_Sérstök":{
+#         "SalurRightB": [11, 9],
+#         "Sound_mix": False,
+#         "Hjola_stóla": True,
+#         "Svið_extent": False
+#     },
+#     "SalurRightC_Sérstök":{
+#         "SalurLeftC": [11, 11],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     },
+#     "SalurRightD_Sérstök":{
+#         "SalurLeftD": [11, 9],
+#         "Sound_mix": False,
+#         "Hjola_stóla": True,
+#         "Svið_extent": False
+#     },
 
 
-    "SvalirOneRightG_Sérstök": {
-        "SvalirOneRightG": [11],
-        "Sound_mix": False,
-        "Hjola_stóla": True,
-        "Svið_extent": False
-    },
-    "SvalirOneRightF_Sérstök": {
-        "SvalirOneRightF": [9],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    },
-    "SvalirOneLeftJ_Sérstök": {
-        "SvalirOneLeftJ": [11],
-        "Sound_mix": False,
-        "Hjola_stóla": True,
-        "Svið_extent": False
-    },
-    "SvalirOneLeftI_Sérstök": {
-        "SvalirOneLeftI": [9],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    },
+#     "SvalirOneRightG_Sérstök": {
+#         "SvalirOneRightG": [11],
+#         "Sound_mix": False,
+#         "Hjola_stóla": True,
+#         "Svið_extent": False
+#     },
+#     "SvalirOneRightF_Sérstök": {
+#         "SvalirOneRightF": [9],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     },
+#     "SvalirOneLeftJ_Sérstök": {
+#         "SvalirOneLeftJ": [11],
+#         "Sound_mix": False,
+#         "Hjola_stóla": True,
+#         "Svið_extent": False
+#     },
+#     "SvalirOneLeftI_Sérstök": {
+#         "SvalirOneLeftI": [9],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     },
 
 
-    "SvalirTwoRightN_Sérstök": {
-        "SvalirTwoRightN": [15],
-        "Sound_mix": False,
-        "Hjola_stóla": True,
-        "Svið_extent": False
-    },
-    "SvalirTwoRightM_Sérstök": {
-        "SvalirTwoRightM": [4],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    },
-    "SvalirTwoLeftR_Sérstök": {
-        "SvalirTwoLeftR": [15],
-        "Sound_mix": False,
-        "Hjola_stóla": True,
-        "Svið_extent": False
-    },
-    "SvalirTwoLeftP_Sérstök": {
-        "SvalirTwoLeftP": [4],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    },
+#     "SvalirTwoRightN_Sérstök": {
+#         "SvalirTwoRightN": [15],
+#         "Sound_mix": False,
+#         "Hjola_stóla": True,
+#         "Svið_extent": False
+#     },
+#     "SvalirTwoRightM_Sérstök": {
+#         "SvalirTwoRightM": [4],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     },
+#     "SvalirTwoLeftR_Sérstök": {
+#         "SvalirTwoLeftR": [15],
+#         "Sound_mix": False,
+#         "Hjola_stóla": True,
+#         "Svið_extent": False
+#     },
+#     "SvalirTwoLeftP_Sérstök": {
+#         "SvalirTwoLeftP": [4],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     },
 
 
-    "SvalirThreeRightT_Sérstök": {
-        "SvalirThreeRightT": [13],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    },
-    "SvalirThreeRightS_Sérstök": {
-        "SvalirThreeRightS": [9],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    },
-    "SvalirThreeLeftV_Sérstök": {
-        "SvalirThreeLeftV": [13],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    },
-    "SvalirThreeLeftU_Sérstök": {
-        "SvalirThreeLeftU": [9],
-        "Sound_mix": False,
-        "Hjola_stóla": False,
-        "Svið_extent": False
-    }
-}
+#     "SvalirThreeRightT_Sérstök": {
+#         "SvalirThreeRightT": [13],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     },
+#     "SvalirThreeRightS_Sérstök": {
+#         "SvalirThreeRightS": [9],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     },
+#     "SvalirThreeLeftV_Sérstök": {
+#         "SvalirThreeLeftV": [13],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     },
+#     "SvalirThreeLeftU_Sérstök": {
+#         "SvalirThreeLeftU": [9],
+#         "Sound_mix": False,
+#         "Hjola_stóla": False,
+#         "Svið_extent": False
+#     }
+# }
 
 for head in allar_haedir.keys():
     svadi = []
@@ -164,16 +164,16 @@ for head in allar_haedir.keys():
         "Allar_radir": svadi
     })
 
-for head3 in serstoksaeti.keys():
+for head3 in allar_hlidar_haedir.keys():
     hlidar_svadi = []
     hlidar_hjola = False
     hlidar_sound_mix = False
     hlidar_svid_extend = False
     hlidar_radar_numer = 0
-    for head2 in serstoksaeti[head3]:
+    for head2 in allar_hlidar_haedir[head3]:
         hlidar_radar_saeti = []
         hlidar_radar_numer += 1
-        for saeti1 in range(1, serstoksaeti[head3][head2] + 1):
+        for saeti1 in range(1, head2 + 1):
             hlidar_radar_saeti.append({
                 "Sæta_Numer": saeti1,
                 "ErHjolastola": hjola,

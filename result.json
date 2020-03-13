@@ -8372,141 +8372,6 @@
         ]
     },
     {
-        "Svæði": "SalurRightB",
-        "Hliðar_svæði": [
-            {
-                "Raðar_númer": 1,
-                "Sæti": [
-                    {
-                        "Sæta_Numer": 1,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 2,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 3,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 4,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 5,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 6,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 7,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 8,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 9,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 10,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 11,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    }
-                ]
-            },
-            {
-                "Raðar_númer": 2,
-                "Sæti": [
-                    {
-                        "Sæta_Numer": 1,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 2,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 3,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 4,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 5,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 6,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 7,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 8,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    },
-                    {
-                        "Sæta_Numer": 9,
-                        "ErHjolastola": false,
-                        "ErSoundMixerFratekid": false,
-                        "ErSviðaExtention": false
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "Svæði": "SalurRightA",
         "Hliðar_svæði": [
             {
@@ -8645,6 +8510,141 @@
                     },
                     {
                         "Sæta_Numer": 11,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Svæði": "SalurRightB",
+        "Hliðar_svæði": [
+            {
+                "Raðar_númer": 1,
+                "Sæti": [
+                    {
+                        "Sæta_Numer": 1,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 2,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 3,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 4,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 5,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 6,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 7,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 8,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 9,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 10,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 11,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    }
+                ]
+            },
+            {
+                "Raðar_númer": 2,
+                "Sæti": [
+                    {
+                        "Sæta_Numer": 1,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 2,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 3,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 4,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 5,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 6,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 7,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 8,
+                        "ErHjolastola": false,
+                        "ErSoundMixerFratekid": false,
+                        "ErSviðaExtention": false
+                    },
+                    {
+                        "Sæta_Numer": 9,
                         "ErHjolastola": false,
                         "ErSoundMixerFratekid": false,
                         "ErSviðaExtention": false
