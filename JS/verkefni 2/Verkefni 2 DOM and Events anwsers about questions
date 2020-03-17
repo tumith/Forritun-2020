@@ -1,0 +1,25 @@
+2.1 Spurningar
+
+1. Afhverju er getElementByID() fljótlegasta aðferðin?
+	Svar:{
+		Því oftast er ekki notað meira en eitt ID inn í HTML skjali svo það tekur ekki langan tíma til að finna hvar það er staðsett.
+	}
+
+2. Hver er munurinn á static og live NodeList?
+	Svar:{
+		Missmunir:{
+			Static:{
+				Allar breitingar sem eru gerðar á DOM-ið hafa eingin áhrif á kóðan safnið þitt.
+			}
+			Live:{
+				Þá er maður að segja að maður vilji láta kóðan automatically updata kóða safnið þitt.
+			}
+		}
+	}
+
+3. Hver er munurinn á true og false í AddEventListener?
+	Svar:{
+		Þegar tölvan tekkur eftir því að maður er buin að í á eitthvern takka þá segir tölvan true við því að það var í á takkan og fer þá að hlusta eftir eitthverjum breitingum
+		en þegar tölvan sér það var ýtt aftur þá breitir hún true í false og hættir þá að hlusta eftir nýum breitingum.
+	}
+	
