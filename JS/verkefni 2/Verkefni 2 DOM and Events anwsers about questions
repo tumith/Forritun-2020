@@ -22,4 +22,37 @@
 		Þegar tölvan tekkur eftir því að maður er buin að í á eitthvern takka þá segir tölvan true við því að það var í á takkan og fer þá að hlusta eftir eitthverjum breitingum
 		en þegar tölvan sér það var ýtt aftur þá breitir hún true í false og hættir þá að hlusta eftir nýum breitingum.
 	}
+
+4. this vísar í Event listener á html element en ekki á object. Þú getur notað bind() til að breyta því. Leystu eftirfarandi kóðadæmi með notkun á bind() til að birta í console “My name is Sam“ en ekki undefined.
+	Svar:{
+		let Person = { 
+			name: 'Sam',
+			sayName: function(){
+			 console.log('My name is '+ this.name);
+			}
+		};
+		buttonEl.addEventListener.bind('click', Person.sayName);
+	}
 	
+2.2 DOM
+
+Í html:
+	<p>málsgrein 1</p>
+	<p>málsgrein 2</p>
+	<div>div 1</div>
+		<p>málsgrein 3</p>
+	<div>div 2</div>
+	
+Í JavaScript:
+	ToDo: {
+		1. Notaðu "querySelector()" til að velja málsgrein nr 1. og litaðu textann rauðan.
+		2. Veldu allar málgreinar og breyttu textanum í ensku með textContent aðferðinni.
+		3. Bættu við efst með "InnerHTML" "<h1>" með textanum Verkefni 2.2.
+		4. Bættu við neðst með "createElement()" og "append()" málsgrein með nafninu þínu.
+	}
+	
+	Svar:{
+		Code:{
+			
+		}
+	}
