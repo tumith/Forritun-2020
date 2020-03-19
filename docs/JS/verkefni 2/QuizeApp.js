@@ -35,7 +35,7 @@ for (let index = 0; index < ary.length; index++) {
             naestaSpurning.textContent = "Næsta spurning";
             naestaSpurning.id = "nextSpurning";
             naestaSpurning.onclick = function(){
-                spurningOne.style = "visibility: hidden;";
+                spurningOne.style = "visibility: hidden; display: none;";
                 spurningTwo.style = "visibility: visible;";
             }
             button.style.backgroundColor = "green";
@@ -76,12 +76,15 @@ for (let index = 0; index < ary.length; index++) {
             reload.onclick = function(){
                 location.reload();
             }
-            document.getElementById("nextSpurning").onclick = function(){
+            let tilBaka = document.createElement("button");
+            tilBaka.textContent = "Til Baka"
+            tilBaka.onclick = function(){
                 spurningOne.style = "visibility: visible;";
-                spurningTwo.style = "visibility: hidden;";
+                spurningTwo.style = "visibility: hidden; display: none;";
             }
             button.style.backgroundColor = "green";
             spurningTwo.appendChild(reload);
+            spurningTwo.appendChild(tilBaka);
         }
     }
     if (index === 0){
