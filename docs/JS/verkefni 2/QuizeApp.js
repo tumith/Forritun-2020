@@ -25,6 +25,11 @@ for (let index = 0; index < ary.length; index++) {
         button.onclick = function(){
             correctCounter++;
             stig.textContent = correctCounter;
+            let naestaSpurning = document.createElement("button");
+            naestaSpurning.textContent = "Næsta spurning";
+            naestaSpurning.onclick = function(){
+                spurningOne.style = "display: nune;";
+            }
             button.style.backgroundColor = "green";
         }
     }
@@ -39,7 +44,7 @@ for (let index = 0; index < ary.length; index++) {
     unorderedList.appendChild(list);
 }
 
-body.appendChild(unorderedList);
+spurningOne.appendChild(unorderedList);
 
 
 let spurningTwo = document.createElement("h1");
@@ -55,6 +60,11 @@ for (let index = 0; index < ary.length; index++) {
         button.onclick = function(){
             correctCounter++;
             stig.textContent = correctCounter;
+            let reload = document.createElement("button");
+            reload.textContent = "Næsta spurning";
+            reload.onclick = function(){
+                location.reload();
+            }
             button.style.backgroundColor = "green";
 
         }
