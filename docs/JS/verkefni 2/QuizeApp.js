@@ -39,7 +39,7 @@ for (let index = 0; index < ary.length; index++) {
                 spurningTwo.style = "visibility: visible;";
             }
             button.style.backgroundColor = "green";
-            body.appendChild(naestaSpurning);
+            spurningOne.appendChild(naestaSpurning);
         }
     }
     else if (index === 2 || 3 || 4){
@@ -81,7 +81,7 @@ for (let index = 0; index < ary.length; index++) {
                 spurningTwo.style = "visibility: hidden;";
             }
             button.style.backgroundColor = "green";
-            body.appendChild(reload);
+            spurningTwo.appendChild(reload);
         }
     }
     if (index === 0){
