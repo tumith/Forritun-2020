@@ -37,11 +37,21 @@
 2.2 DOM
 
 Í html:
-	<p>málsgrein 1</p>
-	<p>málsgrein 2</p>
-	<div>div 1</div>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+	  <p id="malone">málsgrein 1</p>
+	  <p>málsgrein 2</p>
+	  <div>div 1</div>
 		<p>málsgrein 3</p>
-	<div>div 2</div>
+	  <div>div 2</div>
+	</body>
+	</html>
 	
 Í JavaScript:
 	ToDo: {
@@ -53,6 +63,95 @@
 	
 	Svar:{
 		Code:{
-			
+			/*hafði ekki fata án Hrólfs*/
+			const findMal = document.querySelector("#malone");
+			findMal.style.backgroundColor = "red";
+			console.log(findMal);
+
+
+			// const findMal = document.querySelector("p");
+			// findMal.style.backgroundColor = "orange";
+
+
+
+			let tala = 0;
+			const malsgreinar = document.querySelectorAll("p");
+			malsgreinar.forEach(element => {
+				tala = tala + 1;
+				element.textContent = "paragraph "+ tala;
+			});
+
+			document.body.innerHTML = "<h1>Verkefni 2.2</h1>" + document.body.innerHTML;
+
+			let elem = document.createElement("p")
+			elem.textContent = "Tumi Thorberg Jónsson / Hrólfur Gylfa"
+			document.body.appendChild(elem);
+
+			/*-------------------------*/
 		}
 	}
+	
+	
+2.4 QuizApp
+
+Spurningar:{
+	1. Hver er liturinn á Lip Medex Blistex umbúðunum ?
+	2. Er vatn blaut ?
+	Svör:{
+		1. blár
+		2. nei
+	}
+}
+
+Í HTML:
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>QuizApp 2.4</title>
+	</head>
+	<body>
+	   <div class = "spuring">
+		  <h1></h1>
+		  <ul class = "svar" id = "svorEitt"></ul>
+	   </div>
+	   <dic class = "spuring">
+		 <h1></h1>
+		 <ul class = "svar" id = "svorTvo"></ul>
+	   </dic>
+	</body>
+	</html>
+
+
+Í JavaScript:
+	const spurningOne = document.querySelectorAll("h1")[0];
+	spurningOne.textContent = "1. Hver er liturinn á Lip Medex Blistex umbúðunum ?";
+
+	const spurningTwo = document.querySelectorAll("h1")[1];
+	spurningTwo.textContent = "2. Er vatn blaut ?";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
