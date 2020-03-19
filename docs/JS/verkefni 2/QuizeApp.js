@@ -28,7 +28,8 @@ for (let index = 0; index < ary.length; index++) {
             let naestaSpurning = document.createElement("button");
             naestaSpurning.textContent = "Næsta spurning";
             naestaSpurning.onclick = function(){
-                spurningOne.style = "display: nune;";
+                spurningOne.style = "display: none;";
+                spurningTwo.style = "display: inline;"
             }
             button.style.backgroundColor = "green";
         }
@@ -48,6 +49,7 @@ spurningOne.appendChild(unorderedList);
 
 
 let spurningTwo = document.createElement("h1");
+spurningTwo.style = "display: none;"
 spurningTwo.textContent = "2. Er vatn blaut ?";
 
 let unorderedListNumberTwo = document.createElement("ul");
@@ -79,5 +81,5 @@ for (let index = 0; index < ary.length; index++) {
     list.appendChild(button);
     unorderedListNumberTwo.appendChild(list);
 }
+spurningTwo.appendChild(unorderedListNumberTwo);
 body.appendChild(spurningTwo);
-body.appendChild(unorderedListNumberTwo);
