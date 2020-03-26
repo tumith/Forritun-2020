@@ -7,20 +7,23 @@
     <title>vekefni 3</title>
 </head>
 <body>
-    <form class="search-form">
+    <div class="search-form">
         <div class="button">
-            <button id = "bensín95Id">Bensín</button>
-            <button id = "díselId">Dísel</button>
+            <div id = "bensín95Id">Bensín</div>
+            <div id = "díselId">Dísel</div>
+            <div id = "medLykil">Með Afslátti</div>
         </div>
-        <input type="text" class="search" placeholder="petrolStations or companys">
+        <input id ="leita" type="text" class="search" placeholder="Leita">
+        
         <ul id="bensinstodvar" class="suggestions">
             <li>leitaðu af staðsetningu</li>
             <li>eða fyrirtækinu</li>
         </ul>
-    </form>
+    </div>
+    <footer class="end">Tumi Thorberg Jónsson / Hrólfur Gylfason</footer>
     <script src="app.js"></script>
 </body>
-<style>
+<style type="text/css">
     html {
         box-sizing: border-box;
         background: #ffc600;
@@ -54,7 +57,7 @@
         top: 10px;
         z-index: 2;
         border-radius: 5px;
-        font-size: 40px;
+        font-size: 30px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
     }
 
@@ -102,20 +105,37 @@
         outline: 0;
         width: 100%;
         position: relative;
-        top: 0;
+        top: 6px;
         z-index: 2;
         font-size: 30px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    .button button{
+    .button div{
         margin: 6%;
         text-align: center;
         outline: 0;
         border: 10px solid #F7F7F7;
+        background-color: rgb(207, 207, 207);
         width: 90%;
         border-radius: 5px;
-        font-size: 30px;
+        font-size: 19px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+    }
+    .button div:hover{
+        cursor: pointer;
+        color: rgb(121, 121, 121);
+        transition: 0.2s;
+    }
+    .end{
+        margin: 6%;
+        text-align: center;
+        outline: 0;
+        border: 10px solid rgb(231, 231, 231);
+        background-color: #F7F7F7;
+        width: 35%;
+        border-radius: 5px;
+        font-size: 19px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
     }
 </style>
