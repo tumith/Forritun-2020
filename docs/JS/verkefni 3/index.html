@@ -8,10 +8,14 @@
 </head>
 <body>
     <form class="search-form">
-        <input type="text" class="search" placeholder="City or State">
-        <ul class="suggestions">
-            <li>Filter for a city</li>
-            <li>or a state</li>
+        <div class="button">
+            <button id = "bensín95Id">Bensín</button>
+            <button id = "díselId">Dísel</button>
+        </div>
+        <input type="text" class="search" placeholder="petrolStations or companys">
+        <ul id="bensinstodvar" class="suggestions">
+            <li>leitaðu af staðsetningu</li>
+            <li>eða fyrirtækinu</li>
         </ul>
     </form>
     <script src="app.js"></script>
@@ -90,6 +94,29 @@
 
     .hl {
         background: #ffc600;
+    }
+
+    .button{
+        margin: 0;
+        text-align: center;
+        outline: 0;
+        width: 100%;
+        position: relative;
+        top: 0;
+        z-index: 2;
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .button button{
+        margin: 6%;
+        text-align: center;
+        outline: 0;
+        border: 10px solid #F7F7F7;
+        width: 90%;
+        border-radius: 5px;
+        font-size: 30px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
     }
 </style>
 
