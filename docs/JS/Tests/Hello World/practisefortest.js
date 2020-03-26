@@ -56,7 +56,7 @@ alert(school.numberOfClassrooms());*/
     }
 }*/
 
-function draw() {
+/*function draw() {
     var canvas = document.getElementById('canvas');
     if (canvas.getContext) {
        var ctx = canvas.getContext('2d');
@@ -71,4 +71,6 @@ function draw() {
       ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  // Right eye
       ctx.stroke();
     }
-}
+}*/
+
+
