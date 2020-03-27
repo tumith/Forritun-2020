@@ -14,7 +14,7 @@ recognition.addEventListener('result', e => {
     .map(result => result.transcript)
     .join('');
 
-    const poopScript = transcript.replace(/poop|poo|shit|dump/gi);
+    const poopScript = transcript.replace(/poop|poo|shit|dump/gi, 'poop');
     p.textContent = poopScript;
     console.log(poopScript);
 
