@@ -23,8 +23,13 @@ window.addEventListener('keyup', (e) => {
   pressed.push(e.key);
   pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
   if (pressed.join('').includes(secretCode)) {
-    console.log('DING DING!');
-    cornify_add();
+    console.log('virkni');
+    document.getElementById('newpic1').style.backgroundImage="url('https://cdn.discordapp.com/attachments/327134378780262411/693088040121270322/yahoo_2.jpg')";
+    document.getElementById('newpic2').style.backgroundImage="url('https://cdn.discordapp.com/attachments/327134378780262411/693088040121270322/yahoo_2.jpg')";
+    document.getElementById('newpic3').style.backgroundImage="url('https://cdn.discordapp.com/attachments/327134378780262411/693088040121270322/yahoo_2.jpg')";
+    document.getElementById('newpic4').style.backgroundImage="url('https://cdn.discordapp.com/attachments/327134378780262411/693088040121270322/yahoo_2.jpg')";
+    document.getElementById('newpic5').style.backgroundImage="url('https://cdn.discordapp.com/attachments/327134378780262411/693088040121270322/yahoo_2.jpg')";
   }
+
   console.log(pressed);
 });
