@@ -1,5 +1,14 @@
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
+navigator.permissions.query({name: 'microphone'})
+ .then((permissionObj) => {
+  console.log(permissionObj.state);
+ })
+ .catch((error) => {
+  console.log('Got error :', error);
+ })
+
+
 const recognition = new SpeechRecognition();
 recognition.interimResults = true;
 recognition.lang = 'en-US';
