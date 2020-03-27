@@ -14,8 +14,10 @@ recognition.addEventListener('result', e => {
     .map(result => result.transcript)
     .join('');
 
-    const poopScript = transcript.replace(/poop|poo|shit|dump/gi);
-    //if (poopScript == true)
+    //const poopScript = transcript.replace(/poop|poo|shit|dump/gi);
+    if (e.results === 'poop'){
+        let link = document.location.href = 'https://www.mbl.is/frettir/';
+    }
     p.textContent = poopScript;
     console.log(poopScript);
 
