@@ -39,6 +39,7 @@ canvas.addEventListener('mouseout', () => isDrawing = false);
 const pressed = [];
 const secretCode = 'motomoto';
 const konamiCode = 'gunnar';
+const back = 'back';
 
 window.addEventListener('keyup', (e) => {
   console.log(e.key);
@@ -53,6 +54,11 @@ window.addEventListener('keyup', (e) => {
     console.log('virkni');
     ctx.strokeStyle = 'red';
     document.body.style.backgroundImage="url('https://tskoli.is/wp-content/uploads/2017/11/Gunnar-Thorunnarson-150x150.jpg')";
+  }
+  if (pressed.join('').includes(back)) {
+    console.log('virkni');
+    ctx.strokeStyle = 'black';
+    document.body.style.backgroundImage="url('https://img.papyrusonline.com/media/catalog/product/LCI/NG/Nh/YTMwNzY4YTU2NzNmZWM2ZWEyNWI2MWM2YjhmYzIwZjhlYmE1YTVmZmMxZGQ1MGQzMTY2NDc0NWM5NzFhZTp7ImRzIjoiaW1hZ2UiLCJmIjoiXC8yXC84XC8yODU4Nl9kZWZhdWx0XzIuanBnIiwiZmEiOnRydWUsImZmIjp0cnVlLCJmcSI6OTAsImZ0Ijp0cnVlfQ~~.jpg')";
   }
   console.log(pressed);
 });
