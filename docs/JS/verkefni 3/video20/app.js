@@ -14,8 +14,10 @@ recognition.addEventListener('result', e => {
     .map(result => result.transcript)
     .join('');
 
-    const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '💩');
+    const poopScript = transcript.replace(/poop|poo|shit|dump/gi);
+    //if (poopScript == true)
     p.textContent = poopScript;
+    console.log(poopScript);
 
     if (e.results[0].isFinal) {
       p = document.createElement('p');
