@@ -14,19 +14,14 @@ recognition.addEventListener('result', e => {
     .map(result => result.transcript)
     .join('');
 
-    //const poopScript = transcript.replace(/poop|poo|shit|dump/gi);
+    const poopScript = transcript.replace(/poop|poo|shit|dump/gi);
+    p.textContent = poopScript;
+    console.log(poopScript);
 
-    // if (e.results === 'poop'){
-    //     let link = document.location.href = 'https://www.mbl.is/frettir/';
-    // }
-
-    //p.textContent = poopScript;
-    //console.log(poopScript);
-
-    // if (e.results[0].isFinal) {
-    //   p = document.createElement('p');
-    //   words.appendChild(p);
-    // }
+     if (e.results[0].isFinal) {
+       p = document.createElement('p');
+       words.appendChild(p);
+     }
 });
 
 recognition.addEventListener('end', recognition.start);
