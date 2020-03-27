@@ -19,14 +19,14 @@ recognition.addEventListener('result', e => {
     // if (e.results === 'poop'){
     //     let link = document.location.href = 'https://www.mbl.is/frettir/';
     // }
-    
+
     //p.textContent = poopScript;
     //console.log(poopScript);
 
-    if (e.results[0].isFinal) {
-      p = document.createElement('p');
-      words.appendChild(p);
-    }
+    // if (e.results[0].isFinal) {
+    //   p = document.createElement('p');
+    //   words.appendChild(p);
+    // }
 });
 
 recognition.addEventListener('end', recognition.start);
