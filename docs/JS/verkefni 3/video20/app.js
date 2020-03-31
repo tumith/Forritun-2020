@@ -17,6 +17,7 @@ recognition.addEventListener('result', e => {
     /*const poopScript = transcript.replace(/poop|poo|shit|dump/gi, 'poop');
     p.textContent = poopScript;
     console.log(poopScript);*/
+    p.textContent = transcript;
 
      if (e.results[0].isFinal) {
        p = document.createElement('p');
