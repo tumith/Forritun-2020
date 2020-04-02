@@ -4,6 +4,7 @@ const endpoint = 'https://apis.is/petrol';
 let valid_95 = true;
 let erAfslatturmedBen = false;
 let erAfslatturmedDis = false;
+let odyrastTakki = false;
 
 const petrolStations = [];
 fetch(endpoint).then(blob => blob.json()).then(data => {
@@ -13,12 +14,27 @@ fetch(endpoint).then(blob => blob.json()).then(data => {
 });
 
 function findMatches(wordToMatch, petrolStations) {
+
+    let bensinGerd;
+    if (erAfslatturmedBen) { bensinGerd = "bensin95_discount" }
+    else if (erAfslatturmedDis) { bensinGerd = "diesel_discount" }
+    else if (valid_95) { bensinGerd = "bensin95" }
+    else { bensinGerd = "diesel" }
+
     console.log('petrolStations:',petrolStations);
-    return petrolStations.filter(place => {
+    let foundMatches = petrolStations.filter(place => {
         // Hér er verið að ryna að finna út hvort það sem var skrifað var er eitthver staðar í json skráni
+        if (place[bensinGerd] === null) { return false }
         const regex = new RegExp(wordToMatch, 'gi');
         return place.name.match(regex) || place.company.match(regex);
     });
+
+
+    if (odyrastTakki === true) {
+        foundMatches.sort((bensin_1, bensin_2) => bensin_1[bensinGerd] - bensin_2[bensinGerd]);
+    }
+
+    return foundMatches;
 }
 
 /* Er ekki viss um hvað þetta gerir því hann gerir þetta ekki í videóinu
@@ -81,6 +97,9 @@ buttonBen.addEventListener('click', evt => {
     erAfslatturmedDis = false;
     erAfslatturmedBen = false;
     displayMatches();
+    buttonBen.classList.add('button_clicked');
+    buttonDisl.classList.remove('button_clicked');
+    aflatt.classList.remove('button_clicked');
     document.getElementById('leita').placeholder = 'Leita af Bensíni';
 });
 buttonDisl.addEventListener('click', evt => {
@@ -88,6 +107,9 @@ buttonDisl.addEventListener('click', evt => {
     erAfslatturmedDis = false;
     erAfslatturmedBen = false;
     displayMatches();
+    buttonBen.classList.remove('button_clicked');
+    buttonDisl.classList.add('button_clicked');
+    aflatt.classList.remove('button_clicked');
     document.getElementById('leita').placeholder = 'Leita af Dísel';
 });
 const resoult = document.getElementById('searchResoult');
@@ -96,7 +118,19 @@ aflatt.addEventListener('click', evt => {
     erAfslatturmedBen = true;
     erAfslatturmedDis = true;
     displayMatches();
-})
+    aflatt.classList.add('button_clicked');
+});
+
+const odyrTakki =  document.getElementById('takkiOdyr');
+odyrTakki.addEventListener('click', evt =>{
+
+    if (odyrastTakki === true) { odyrastTakki = false; }
+    else { odyrastTakki = true }
+
+    displayMatches();
+    odyrTakki.classList.toggle('button_clicked');
+
+});
 
 
 searchInput.addEventListener('change', displayMatches);
