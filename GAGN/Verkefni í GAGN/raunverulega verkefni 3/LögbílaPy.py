@@ -18,7 +18,7 @@ def is_int(string):
 current_lands_svaedi = ""
 new_file = []
 
-with open('report-2019.csv', encoding="UTF8") as csvSkjal:
+with open('Logbylaskra_2019.csv', encoding="UTF8") as csvSkjal:
     csvReader = csv.reader(csvSkjal, delimiter=',')
     for row in csvReader:
         if is_int(row[0]) is False:
