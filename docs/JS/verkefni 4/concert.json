@@ -1,0 +1,92 @@
+{
+    "results": [
+      {
+        "eventDateName": "Vínartónleikar 2020",
+        "name": "Græn - tónleikaröð",
+        "dateOfShow": "08-06-2020T19:30:00",
+        "userGroupName": "Harpa",
+        "eventHallName": "Eldborg",
+        "imageSource": "http://midi.is/images/medium/15.759.jpg"
+      },
+      {
+        "eventDateName": "Föstudagsfreistingar 09.01",
+        "name": "",
+        "dateOfShow": "09-06-2020T12:00:00",
+        "userGroupName": "Miðasala MAk",
+        "eventHallName": "Hamrar",
+        "imageSource": "http://midi.is/images/medium/1.8394.jpg"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "Stuðmenn 50 ára",
+        "dateOfShow": "14-11-2020T21:00:00",
+        "userGroupName": "Harpa",
+        "eventHallName": "Eldborg",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9295.jpg?cache=637212603148670000"
+      },
+      {
+        "eventDateName": "Kvikmyndatónleikar",
+        "name": "Joker Kvikmyndatónleikar",
+        "dateOfShow": "31-05-2020T19:30:00",
+        "userGroupName": "Harpa",
+        "eventHallName": "Eldborg",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9792.jpg?cache=637194457825970000"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "Jón Jónsson",
+        "dateOfShow": "30-05-2020T21:00:00",
+        "userGroupName": "Harpa",
+        "eventHallName": "Eldborg",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9792.jpg?cache=637194457825970000"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "Dúndurfréttir - Abbey Road 50 ára",
+        "dateOfShow": "03-10-2020T20:00:00",
+        "userGroupName": "Harpa",
+        "eventHallName": "Eldborg",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9245.jpg?cache=637196971952500000"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "Skítamórall",
+        "dateOfShow": "16-06-2020T20:30:00",
+        "userGroupName": "Harpa",
+        "eventHallName": "Eldborg",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9245.jpg?cache=637196971952500000"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "GusGus 25 ára",
+        "dateOfShow": "07-11-2020T20:00:00",
+        "userGroupName": "Harpa",
+        "eventHallName": "Eldborg",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9146.jpg?cache=637140367599070000"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "Tove Lo",
+        "dateOfShow": "12-08-2020T20:00:00",
+        "userGroupName": "Harpa",
+        "eventHallName": "Silfurberg",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9774.jpg?cache=637181494115130000"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "Skunk Anansie",
+        "dateOfShow": "24-10-2020T20:00:00",
+        "userGroupName": "Laugardalshöll",
+        "eventHallName": "",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9616.jpg?cache=637209150808500000"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "Gavin Degraw",
+        "dateOfShow": "17-08-2020T20:00:00",
+        "userGroupName": "Harpa",
+        "eventHallName": "Silfurberg",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9911.jpg?cache=637207436118270000"
+      }
+    ]
+  }
