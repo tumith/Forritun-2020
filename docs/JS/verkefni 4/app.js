@@ -1,37 +1,39 @@
-const endpoint = 'https://apis.is/earthquake/is';
+
+const endpoint = 'https://raw.githubusercontent.com/tumith/Forritun-2020/master/docs/JS/verkefni 4/concert.json';
 
 let valid_95 = true;
 let erAfslatturmedBen = false;
 let erAfslatturmedDis = false;
 let odyrastTakki = false;
 
-const earthquake = [];
+const concert = [];
 fetch(endpoint).then(blob => blob.json()).then(data => {
     console.log(data);
     
-    earthquake.push(...data.results)
+    concert.push(...data.results)
 });
 
-function findMatches(wordToMatch, earthquake) {
+function findMatches(wordToMatch, concert) {
 
-    console.log('earthquake:',earthquake);
-    let foundMatches = earthquake.filter(place => {
-        // Hér er verið að ryna að finna út hvort það sem var skrifað var er eitthver staðar í json skráni
-        if (place[bensinGerd] === null) { return false }
+    console.log('concert:',concert);
+    let foundMatches = concert.filter(place => {
+            // Hér er verið að ryna að finna út hvort það sem var skrifað var er eitthver staðar í json skráni
+        // if (place[bensinGerd] === null) { return false }
         const regex = new RegExp(wordToMatch, 'gi');
-        return place.name.match(regex) || place.company.match(regex);
+        return place.name.match(regex) || place.eventDateName.match(regex);
     });
 
 
-    if (odyrastTakki === true) {
-        foundMatches.sort((bensin_1, bensin_2) => bensin_1[bensinGerd] - bensin_2[bensinGerd]);
-    }
+    // if (odyrastTakki === true) {
+    //     foundMatches.sort((bensin_1, bensin_2) => bensin_1[bensinGerd] - bensin_2[bensinGerd]);
+    // }
 
     return foundMatches;
 }
 
 /* Er ekki viss um hvað þetta gerir því hann gerir þetta ekki í videóinu
-    SKOÐA !!!!!!    
+    SKOÐA !!!!!!
+    þetta er bara voða flókið regex 
 */
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -39,90 +41,60 @@ function numberWithCommas(x) {
 /*-----------------------------------------*/
 
 function displayMatches() {
-    const matchArray = findMatches(searchInput.value, earthquake);
+    const matchArray = findMatches(searchInput.value, concert);
     console.log('matchArray',matchArray);
     
-    while (earthquakes.firstChild) { earthquakes.removeChild(earthquakes.firstChild); }
+    while (concerts.firstChild) { concerts.removeChild(concerts.firstChild); }
     if (matchArray.length !== 0){
         let resoultNumber = document.createElement('li');
         resoultNumber.textContent = 'Fjöldi leitar niðurstaða  ' + matchArray.length;
-        resoultNumber.style = 'color: blue;';
-        earthquakes.appendChild(resoultNumber);
+        resoultNumber.style = `color: blue;`;
+        concerts.appendChild(resoultNumber);
     }
 
-    matchArray.forEach(bensinstod => {
-        let bensinstod_node = document.createElement('li');
-        bensinstod_node.textContent = bensinstod.name + ', ' + bensinstod.company;
+    matchArray.forEach(tonleikar => {
+        let tonleikar_node = document.createElement('li');
+        tonleikar_node.textContent = tonleikar.name + ', ' + tonleikar.eventDateName;
+        tonleikar_node.style = `background-image: ${tonleikar.imageSource};`;
         let verd_node = document.createElement('span');
         if (valid_95 === true){
-            verd_node.textContent = bensinstod.bensin95 + 'kr';
-            if (erAfslatturmedBen === true){
-                verd_node.textContent = bensinstod.bensin95_discount + 'kr';
-                document.getElementById('leita').placeholder = 'Leita af Bensíni með afslætti';
-            }
-        }else{
-            verd_node.textContent = bensinstod.diesel + 'kr';
-            if (erAfslatturmedDis === true){
-                verd_node.textContent = bensinstod.diesel_discount + 'kr';
-                document.getElementById('leita').placeholder = 'Leita af Dísel með afslætti';
-            }
+            verd_node.textContent = tonleikar.userGroupName + '-' + tonleikar.eventHallName;
         }
         console.log('verð',valid_95);
-        bensinstod_node.appendChild(verd_node);
-        earthquakes.appendChild(bensinstod_node);
+        tonleikar_node.appendChild(verd_node);
+        concerts.appendChild(tonleikar_node);
     });
 
     if (matchArray.length === 0) {
-        let bensinstod_node = document.createElement('li');
-        bensinstod_node.textContent = 'Engar niðurstöður fundust';
-        bensinstod_node.style = 'color: red;';
-        earthquakes.appendChild(bensinstod_node);
+        let tonleikar_node = document.createElement('li');
+        tonleikar_node.textContent = 'Engar niðurstöður fundust';
+        tonleikar_node.style = 'color: red;';
+        concerts.appendChild(tonleikar_node);
     }
 }
 
 const searchInput = document.querySelector('.search');
-const earthquakes = document.getElementById('earthquakes');
-const buttonBen = document.getElementById('bensín95Id');
-const buttonDisl = document.getElementById('díselId');
+// const concerts = document.getElementById('concerts');
 
-buttonBen.addEventListener('click', evt => {
-    valid_95 = true;
-    erAfslatturmedDis = false;
-    erAfslatturmedBen = false;
-    displayMatches();
-    buttonBen.classList.add('button_clicked');
-    buttonDisl.classList.remove('button_clicked');
-    aflatt.classList.remove('button_clicked');
-    document.getElementById('leita').placeholder = 'Leita af Bensíni';
+var slider = document.getElementById('rating');
+
+noUiSlider.create(slider, {
+    start: [20, 80],
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 100
+    }
 });
-buttonDisl.addEventListener('click', evt => {
-    valid_95 = false;
-    erAfslatturmedDis = false;
-    erAfslatturmedBen = false;
-    displayMatches();
-    buttonBen.classList.remove('button_clicked');
-    buttonDisl.classList.add('button_clicked');
-    aflatt.classList.remove('button_clicked');
-    document.getElementById('leita').placeholder = 'Leita af Dísel';
-});
-const resoult = document.getElementById('searchResoult');
-const aflatt = document.getElementById('medLykil');
-aflatt.addEventListener('click', evt => {
-    erAfslatturmedBen = true;
-    erAfslatturmedDis = true;
-    displayMatches();
-    aflatt.classList.add('button_clicked');
-});
+var slider = document.getElementById('size');
 
-const odyrTakki =  document.getElementById('takkiOdyr');
-odyrTakki.addEventListener('click', evt =>{
-
-    if (odyrastTakki === true) { odyrastTakki = false; }
-    else { odyrastTakki = true }
-
-    displayMatches();
-    odyrTakki.classList.toggle('button_clicked');
-
+noUiSlider.create(slider, {
+    start: [20, 80],
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 100
+    }
 });
 
 

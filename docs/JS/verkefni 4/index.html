@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>earthquake</title>
+    <link rel="stylesheet" href="./nouislider.min.css">
+    <title>Bull concert</title>
 </head>
 <body>
     <div class="search-form">
+        <!--  -->
         <div class="button">
             <div id = "time">time</div>
             <div id = "size">size</div>
-            <div id = "depth">depth</div>
+            <div id = "rating">einkun</div>
         </div>
         <input id ="leita" type="text" class="search" placeholder="Leita">
         
-        <ul id="earthquakes" class="suggestions">
-            <li>leitaðu af Jarðskjálti</li>
+        <ul id="concerts" class="suggestions">
+            <li>leitaðu af tónleikum</li>
         </ul>
     </div>
     <footer class="end">Tumi Thorberg Jónsson / Hrólfur Gylfason</footer>
-    <script src="app.js"></script>
+    <script src="./nouislider.js"></script>
+    <script src="./app.js"></script>
 </body>
 <style type="text/css">
     html {
@@ -45,7 +48,7 @@
     }
 
     input.search {
-        margin: 0;
+        margin: 69px;
         text-align: center;
         outline: 0;
         border: 10px solid #F7F7F7;
@@ -98,7 +101,7 @@
         background: #ffc600;
     }
 
-    .button{
+    /* .button{
         margin: 0;
         text-align: center;
         outline: 0;
@@ -132,7 +135,7 @@
         background-color: black !important;
         border-color: grey !important;
         color: white !important;
-    }
+    } */
 
     .end{
         margin: 6%;

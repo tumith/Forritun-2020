@@ -6,14 +6,18 @@
         "dateOfShow": "08-06-2020T19:30:00",
         "userGroupName": "Harpa",
         "eventHallName": "Eldborg",
+        "size": "76",
+        "rating": "7.6",
         "imageSource": "http://midi.is/images/medium/15.759.jpg"
       },
       {
         "eventDateName": "Föstudagsfreistingar 09.01",
-        "name": "",
+        "name": "Föstudagsfreistingar",
         "dateOfShow": "09-06-2020T12:00:00",
         "userGroupName": "Miðasala MAk",
         "eventHallName": "Hamrar",
+        "size": "38",
+        "rating": "3.8",
         "imageSource": "http://midi.is/images/medium/1.8394.jpg"
       },
       {
@@ -22,6 +26,8 @@
         "dateOfShow": "14-11-2020T21:00:00",
         "userGroupName": "Harpa",
         "eventHallName": "Eldborg",
+        "size": "100",
+        "rating": "10",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9295.jpg?cache=637212603148670000"
       },
       {
@@ -30,6 +36,8 @@
         "dateOfShow": "31-05-2020T19:30:00",
         "userGroupName": "Harpa",
         "eventHallName": "Eldborg",
+        "size": "93",
+        "rating": "9.3",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9792.jpg?cache=637194457825970000"
       },
       {
@@ -38,6 +46,8 @@
         "dateOfShow": "30-05-2020T21:00:00",
         "userGroupName": "Harpa",
         "eventHallName": "Eldborg",
+        "size": "47",
+        "rating": "4.7",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9792.jpg?cache=637194457825970000"
       },
       {
@@ -46,6 +56,8 @@
         "dateOfShow": "03-10-2020T20:00:00",
         "userGroupName": "Harpa",
         "eventHallName": "Eldborg",
+        "size": "100",
+        "rating": "10",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9245.jpg?cache=637196971952500000"
       },
       {
@@ -54,6 +66,8 @@
         "dateOfShow": "16-06-2020T20:30:00",
         "userGroupName": "Harpa",
         "eventHallName": "Eldborg",
+        "size": "100",
+        "rating": "10",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9245.jpg?cache=637196971952500000"
       },
       {
@@ -62,6 +76,8 @@
         "dateOfShow": "07-11-2020T20:00:00",
         "userGroupName": "Harpa",
         "eventHallName": "Eldborg",
+        "size": "90",
+        "rating": "9.0",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9146.jpg?cache=637140367599070000"
       },
       {
@@ -70,6 +86,8 @@
         "dateOfShow": "12-08-2020T20:00:00",
         "userGroupName": "Harpa",
         "eventHallName": "Silfurberg",
+        "size": "100",
+        "rating": "10",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9774.jpg?cache=637181494115130000"
       },
       {
@@ -78,6 +96,8 @@
         "dateOfShow": "24-10-2020T20:00:00",
         "userGroupName": "Laugardalshöll",
         "eventHallName": "",
+        "size": "55",
+        "rating": "5.5",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9616.jpg?cache=637209150808500000"
       },
       {
@@ -86,6 +106,8 @@
         "dateOfShow": "17-08-2020T20:00:00",
         "userGroupName": "Harpa",
         "eventHallName": "Silfurberg",
+        "size": "81",
+        "rating": "8.1",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9911.jpg?cache=637207436118270000"
       }
     ]
