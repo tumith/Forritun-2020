@@ -10,7 +10,7 @@ html {
     box-sizing: inherit;
 }
 .divMaster {
-    margin-top: 50px;
+    margin-top: 1em;
 }
 
 input {
@@ -60,16 +60,6 @@ input.search {
     text-transform: capitalize;
 }
 
-/* .suggestions li:nth-child(even) {
-    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
-    background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
-}
-
-.suggestions li:nth-child(odd) {
-    transform: perspective(100px) rotateX(-3deg) translateY(3px);
-    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
-} */
-
 span.population {
     font-size: 15px;
 }
@@ -77,42 +67,6 @@ span.population {
 .hl {
     background: #ffc600;
 }
-
-/* .button{
-    margin: 0;
-    text-align: center;
-    outline: 0;
-    width: 100%;
-    position: relative;
-    top: 6px;
-    z-index: 2;
-    font-size: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.button div{
-    margin: 6%;
-    padding: 0.3em;
-    text-align: center;
-    outline: 0;
-    border: 4px solid #f7f7f7;
-    background-color: #ffffff;
-    width: 97%;
-    border-radius: 5px;
-    font-size: 19px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
-}
-.button div:hover{
-    cursor: pointer;
-    color: rgb(121, 121, 121);
-    transition: 0.2s;
-}
-
-.button_clicked{
-    background-color: black !important;
-    border-color: grey !important;
-    color: white !important;
-} */
 
 .end{
     margin: 6%;
