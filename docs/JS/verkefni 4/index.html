@@ -9,22 +9,23 @@
 </head>
 <body>
     <div class="search-form">
-        <p>size</p>
+        <input id ="leita" type="text" class="search" placeholder="Leita">
+        size
         <div class="divMaster" id = "size"></div>
         <div id = "sizeDisplay"></div>
-        <p>einkun</p>
+        einkun
         <div class="divMaster" id = "rating"></div>
         <div id = "ratingDisplay"></div>
-        <p>time</p>
+        time
         <input type = "date" id = "dateStart"></input>
         <input type = "date" id="dateEnd">
-        <input id ="leita" type="text" class="search" placeholder="Leita">
         
         <ul id="concerts" class="suggestions">
             <li>leitaðu af tónleikum</li>
         </ul>
     </div>
     <footer class="end">Tumi Thorberg Jónsson / Hrólfur Gylfason</footer>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="./nouislider.js"></script>
     <script src="./app.js"></script>
 </body>

@@ -1,5 +1,6 @@
 
 let SIZE = 99;
+let DATESTART, DATEEND;
 const endpoint = 'https://raw.githubusercontent.com/tumith/Forritun-2020/master/docs/JS/verkefni 4/concert.json';
 
 
@@ -17,15 +18,24 @@ function findMatches(wordToMatch, concert) {
         // Hér er verið að ryna að finna út hvort það sem var skrifað var er eitthver staðar í json skráni
         const regex = new RegExp(wordToMatch, 'gi');
 
-        if (place.rating >= ratingListi[0] && place.rating <= ratingListi[1] && place.size <= SIZE) {
-            return place.name.match(regex) || place.eventDateName.match(regex);
+        if (!DATESTART || !DATEEND) {
+            if (place.rating >= ratingListi[0] && place.rating <= ratingListi[1] && place.size <= SIZE) {
+                return place.name.match(regex) || place.eventDateName.match(regex);
+            }
+            else{
+                return false;
+            }
         }
         else{
-            return false;
+            if (place.rating >= ratingListi[0] && place.rating <= ratingListi[1] && place.size <= SIZE 
+                    && moment(place.dateOfShow, 'DD-MM-YYYYTHH:mm:ss').isAfter(DATESTART) && moment(place.dateOfShow, 'DD-MM-YYYYTHH:mm:ss').isBefore(DATEEND)) {
+                return place.name.match(regex) || place.eventDateName.match(regex);
+            }
+            else{
+                return false;
+            }
         }
 
-        
-        
     });
 
     return foundMatches;
@@ -71,13 +81,17 @@ function displayMatches() {
         concerts.appendChild(tonleikar_node);
     }
 
-    document.getElementById("ratingDisplay").textContent = ratingListi[0] + " - " + ratingListi[1];
-    document.getElementById("sizeDisplay").textContent = SIZE;
+    let ratingDisplayM = document.getElementById("ratingDisplay");
+    ratingDisplayM.textContent = ratingListi[0] + " - " + ratingListi[1];
+
+    let sizeDisplayM = document.getElementById("sizeDisplay");
+    sizeDisplayM.textContent = SIZE;
 }
 
 const searchInput = document.querySelector('.search');
 const concerts = document.getElementById('concerts');
-
+const dateStart = document.getElementById('dateStart');
+const dateEnd = document.getElementById('dateEnd');
 
 let slider = document.getElementById('rating');
 
@@ -86,7 +100,7 @@ noUiSlider.create(slider, {
     connect: true,
     range: {
         'min': 0,
-        'max': 10
+        'max': 9.99
     }
 });
 
@@ -96,8 +110,7 @@ let marginMax = document.getElementById('rating-value-max');
 
 let ratingSlider = slider.noUiSlider.on('update', function (values, handle) {
     // finna tölur í bláa svæðinu og setja þær í listan ratingListi
-   
-    
+
     ratingListi[handle] = values[handle];
     if (handle) {
         console.log(values[handle]);
@@ -109,8 +122,6 @@ let ratingSlider = slider.noUiSlider.on('update', function (values, handle) {
     displayMatches();
 });
 
-
-
 let connectSlider = document.getElementById('size');
 
 noUiSlider.create(connectSlider, {
@@ -121,8 +132,8 @@ noUiSlider.create(connectSlider, {
         'max': 99
     }
 });
+
 let sizeSlider = connectSlider.noUiSlider.on('update', function (values, handle) {
-    // finna tölur í bláa svæðinu og setja þær í listan sizeListi
 
     SIZE = values[handle];
     
@@ -132,6 +143,16 @@ let sizeSlider = connectSlider.noUiSlider.on('update', function (values, handle)
 
 });
 
+
+dateStart.addEventListener('input', () => {
+    DATESTART = moment(dateStart.value);
+    displayMatches();
+});
+
+dateEnd.addEventListener('input', () =>{
+    DATEEND = moment(dateEnd.value);
+    displayMatches();
+})
 
 
 

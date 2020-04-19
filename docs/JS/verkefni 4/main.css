@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    background: #ffc600;
+    background: #4f43fa;
     font-family: 'helvetica neue';
     font-size: 20px;
     font-weight: 200;
@@ -9,22 +9,26 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 .divMaster {
     margin-top: 1em;
+    display: flex;
+    width: 18%;
 }
 
 input {
-    width: 100%;
+    width: 13%;
     padding: 20px;
 }
 
 .search-form {
-    max-width: 400px;
+    max-width: 72em;
     margin: 50px auto;
 }
 
 input.search {
-    margin: 69px;
+    margin-top: 69px;
+    margin-bottom: 69px;
     text-align: center;
     outline: 0;
     border: 10px solid #F7F7F7;
