@@ -58,7 +58,7 @@ function displayMatches() {
         tonleikar_node.style = `background-image: ${tonleikar.imageSource};`;
         let verd_node = document.createElement('span');
         if (valid_95 === true){
-            verd_node.textContent = tonleikar.userGroupName + '-' + tonleikar.eventHallName;
+            verd_node.textContent = tonleikar.userGroupName + " \n " + tonleikar.eventHallName;
         }
         console.log('verð',valid_95);
         tonleikar_node.appendChild(verd_node);

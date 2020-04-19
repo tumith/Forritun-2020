@@ -109,6 +109,26 @@
         "size": "81",
         "rating": "8.1",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9911.jpg?cache=637207436118270000"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "Sumarhátíð Helga Björns",
+        "dateOfShow": "28-08-2020T21:00:00",
+        "userGroupName": "Háskólabíó",
+        "eventHallName": "",
+        "size": "47",
+        "rating": "4.7",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9756.jpg?cache=637228269208700000"
+      },
+      {
+        "eventDateName": "Tónleikar",
+        "name": "Sumarhátíð Helga Björns",
+        "dateOfShow": "29-08-2020T19:30:00",
+        "userGroupName": "Háskólabíó",
+        "eventHallName": "",
+        "size": "47",
+        "rating": "4.7",
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9756.jpg?cache=637228269208700000"
       }
     ]
   }
