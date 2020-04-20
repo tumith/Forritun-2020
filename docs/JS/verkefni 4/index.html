@@ -10,15 +10,23 @@
 <body>
     <div class="search-form">
         <input id ="leita" type="text" class="search" placeholder="Leita">
-        size
-        <div class="divMaster" id = "size"></div>
-        <div id = "sizeDisplay"></div>
-        einkun
-        <div class="divMaster" id = "rating"></div>
-        <div id = "ratingDisplay"></div>
-        time
-        <input type = "date" id = "dateStart"></input>
-        <input type = "date" id="dateEnd">
+        <div class="columeMaster">
+            <span class="wordMaster">Fjöldi fólks sem kemst</span>
+            <div class="divMaster" id = "size"></div>
+            <div id = "sizeDisplay"></div>
+        </div>
+        <div class="columeMaster">
+            <span class="wordMaster">Einkun</span>
+            <div class="divMaster" id = "rating"></div>
+            <div id = "ratingDisplay"></div>
+        </div>
+        <div class="moveTimePosition">
+            <span class="smallMaster">Frá:</span>
+            <input type = "date" id = "dateStart"></input>
+            <span class="smallMaster">Til:</span>
+            <input type = "date" id="dateEnd">
+        </div>
+    
         
         <ul id="concerts" class="suggestions">
             <li>leitaðu af tónleikum</li>

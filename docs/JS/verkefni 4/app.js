@@ -65,7 +65,7 @@ function displayMatches() {
     matchArray.forEach(tonleikar => {
         let tonleikar_node = document.createElement('li');
         tonleikar_node.textContent = tonleikar.name + ', ' + tonleikar.eventDateName;
-        // tonleikar_node.style = `background-image: url(${tonleikar.imageSource});`;
+        tonleikar_node.style = `background-image: url(${tonleikar.imageSource}); background-size: cover; color: #E500FF;`;
         let stadsetning_node = document.createElement('span');
         stadsetning_node.textContent = tonleikar.userGroupName + " \n " + tonleikar.eventHallName;
         
@@ -83,9 +83,11 @@ function displayMatches() {
 
     let ratingDisplayM = document.getElementById("ratingDisplay");
     ratingDisplayM.textContent = ratingListi[0] + " - " + ratingListi[1];
-
+    ratingDisplayM.style = 'margin-bottom: 21px; margin-top: 10px; position: relative; left: 16px;';
+    
     let sizeDisplayM = document.getElementById("sizeDisplay");
     sizeDisplayM.textContent = SIZE;
+    sizeDisplayM.style = 'margin-bottom: 21px; margin-top: 10px; position: relative; left: 16px;';
 }
 
 const searchInput = document.querySelector('.search');

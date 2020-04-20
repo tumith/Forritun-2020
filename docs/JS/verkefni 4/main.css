@@ -10,10 +10,36 @@ html {
     box-sizing: inherit;
 }
 
+.columeMaster{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    left: 16em;
+    bottom: 36px;
+}
+
+.moveTimePosition{
+    position: relative;
+    bottom: 120px;
+    left: 44px;
+}
+
+.wordMaster{
+    position: relative;
+    left: 24em;
+    bottom: 11px;
+}
+
 .divMaster {
     margin-top: 1em;
     display: flex;
-    width: 18%;
+    width: 98%;
+}
+
+.smallMaster{
+    position: relative;
+    bottom: 41px;
+    left: 40px;
 }
 
 input {
@@ -27,7 +53,6 @@ input {
 }
 
 input.search {
-    margin-top: 69px;
     margin-bottom: 69px;
     text-align: center;
     outline: 0;
@@ -56,8 +81,8 @@ input.search {
     list-style: none;
     border-bottom: 1px solid #D8D8D8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
-    margin: 0;
-    padding: 20px;
+    margin: 5px;
+    padding: 23px;
     transition: background 0.2s;
     display: flex;
     justify-content: space-between;
