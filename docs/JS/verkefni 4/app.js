@@ -66,7 +66,8 @@ function displayMatches() {
         let tonleikar_node = document.createElement('li');
         tonleikar_node.textContent = tonleikar.name + ', ' + tonleikar.eventDateName;
         tonleikar_node.style = `background-image: url(${tonleikar.imageSource}); background-size: cover; color: #E500FF;`;
-        let stadsetning_node = document.createElement('span');
+        let stadsetning_node = document.createElement('p');
+        stadsetning_node.style =  'text-size-adjust: 1em;';
         stadsetning_node.textContent = tonleikar.userGroupName + " \n " + tonleikar.eventHallName;
         
         //hér þarf að sína allt sem pasar við tölurnar sem verða í listanum %% NAFN Á LISTANUM %%
@@ -94,6 +95,22 @@ const searchInput = document.querySelector('.search');
 const concerts = document.getElementById('concerts');
 const dateStart = document.getElementById('dateStart');
 const dateEnd = document.getElementById('dateEnd');
+const suggestionss = document.querySelectorAll('.suggestions');
+
+function toggleOpen() {
+    console.log('Hello');
+    this.classList.toggle('open');
+}
+
+function toggleActive(e) {
+    console.log(e.propertyName);
+    if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+    }
+}
+
+suggestionss.forEach(suggestions => suggestions.addEventListener('click', toggleOpen));
+suggestionss.forEach(suggestions => suggestions.addEventListener('transitionend', toggleActive));
 
 let slider = document.getElementById('rating');
 
@@ -139,7 +156,7 @@ let sizeSlider = connectSlider.noUiSlider.on('update', function (values, handle)
 
     SIZE = values[handle];
     
-    displayMatches()
+    displayMatches();
     console.log(values[handle]);
     console.log(handle);
 
