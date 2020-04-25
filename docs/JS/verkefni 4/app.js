@@ -65,10 +65,10 @@ function displayMatches() {
     matchArray.forEach(tonleikar => {
         let tonleikar_node = document.createElement('li');
         tonleikar_node.textContent = tonleikar.name + ', ' + tonleikar.eventDateName;
-        tonleikar_node.style = `background-image: url(${tonleikar.imageSource}); background-size: cover; color: #E500FF;`;
+        tonleikar_node.style = `background-image: url(${tonleikar.imageSource}); background-size: cover; color: #FF4136;`;
         let stadsetning_node = document.createElement('p');
         stadsetning_node.style =  'text-size-adjust: 1em;';
-        stadsetning_node.textContent = tonleikar.userGroupName + " \n " + tonleikar.eventHallName;
+        stadsetning_node.textContent = tonleikar.userGroupName + " \n " + tonleikar.eventHallName + " \n " + tonleikar.dateOfShow;
         
         //hér þarf að sína allt sem pasar við tölurnar sem verða í listanum %% NAFN Á LISTANUM %%
         tonleikar_node.appendChild(stadsetning_node);
