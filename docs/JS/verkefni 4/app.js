@@ -65,7 +65,7 @@ function displayMatches() {
     matchArray.forEach(tonleikar => {
         let tonleikar_node = document.createElement('li');
         tonleikar_node.textContent = tonleikar.name + ', ' + tonleikar.eventDateName;
-        tonleikar_node.style = `background-image: url(${tonleikar.imageSource}); background-size: cover; color: #FF4136;`;
+        tonleikar_node.style = `background-image: url(${tonleikar.imageSource}); background-size: cover; color: ${tonleikar.color};`;
         let stadsetning_node = document.createElement('p');
         stadsetning_node.style =  'text-size-adjust: 1em;';
         stadsetning_node.textContent = tonleikar.userGroupName + " \n " + tonleikar.eventHallName + " \n " + tonleikar.dateOfShow;

@@ -9,7 +9,7 @@
         "size": "76",
         "rating": "7.6",
         "imageSource": "https://www.sinfonia.is/media/myndir-2019/20/c270x270/saeunn-og-shostakovitsj-kassi.jpg",
-        "color": "black"
+        "colorT": "black"
       },
       {
         "eventDateName": "Föstudagsfreistingar 09.01",
@@ -20,7 +20,7 @@
         "size": "38",
         "rating": "3.8",
         "imageSource": "https://www.fjallabyggd.is/static/news/lg/43758066_2156712921314121_6086727918455619584_o.jpg",
-        "color": "black"
+        "colorT": "black"
       },
       {
         "eventDateName": "Tónleikar",
@@ -31,7 +31,7 @@
         "size": "99",
         "rating": "9.9",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9295.jpg?cache=637212603148670000",
-        "color": "black"
+        "colorT": "black"
       },
       {
         "eventDateName": "Kvikmyndatónleikar",
@@ -41,7 +41,8 @@
         "eventHallName": "Eldborg",
         "size": "93",
         "rating": "9.3",
-        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9792.jpg?cache=637194457825970000"
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9792.jpg?cache=637194457825970000",
+        "colorT": "blue"
       },
       {
         "eventDateName": "Tónleikar",
@@ -51,7 +52,8 @@
         "eventHallName": "Eldborg",
         "size": "47",
         "rating": "4.7",
-        "imageSource": "https://www.ifsport.is/skrar/frettamyndir/jonjonssonnet.jpg"
+        "imageSource": "https://www.ifsport.is/skrar/frettamyndir/jonjonssonnet.jpg",
+        "colorT": "white"
       },
       {
         "eventDateName": "Tónleikar",
@@ -61,7 +63,8 @@
         "eventHallName": "Eldborg",
         "size": "99",
         "rating": "9.9",
-        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9245.jpg?cache=637196971952500000"
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9245.jpg?cache=637196971952500000",
+        "colorT": "white"
       },
       {
         "eventDateName": "Tónleikar",
@@ -71,7 +74,8 @@
         "eventHallName": "Eldborg",
         "size": "99",
         "rating": "9.9",
-        "imageSource": "https://cdn.tix.is/tix/EventImages/Feature_9117.jpg?cache=637213447155230000"
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Feature_9117.jpg?cache=637213447155230000",
+        "colorT": "white"
       },
       {
         "eventDateName": "Tónleikar",
@@ -81,7 +85,8 @@
         "eventHallName": "Eldborg",
         "size": "90",
         "rating": "9.0",
-        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9146.jpg?cache=637140367599070000"
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9146.jpg?cache=637140367599070000",
+        "colorT": ""
       },
       {
         "eventDateName": "Tónleikar",
@@ -91,7 +96,8 @@
         "eventHallName": "Silfurberg",
         "size": "99",
         "rating": "9.9",
-        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9774.jpg?cache=637181494115130000"
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9774.jpg?cache=637181494115130000",
+        "colorT": ""
       },
       {
         "eventDateName": "Tónleikar",
@@ -101,7 +107,8 @@
         "eventHallName": "",
         "size": "55",
         "rating": "5.5",
-        "imageSource": "https://images.squarespace-cdn.com/content/v1/553a2759e4b0c9771b556e61/1544622694129-Y70D7GDDA51XJDU25WRV/ke17ZwdGBToddI8pDm48kMjHxSTxRSxgsT6Xu8ct2i8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dnM0DO9dkBgf2SMEtnVll8ow1ckt27Q0zVdhf9Ajy8onP7cJNZlDXbgJNE9ef52e8w/Skunk_Anansie_Group_Shot__Black_2019.jpg?format=2500w"
+        "imageSource": "https://images.squarespace-cdn.com/content/v1/553a2759e4b0c9771b556e61/1544622694129-Y70D7GDDA51XJDU25WRV/ke17ZwdGBToddI8pDm48kMjHxSTxRSxgsT6Xu8ct2i8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dnM0DO9dkBgf2SMEtnVll8ow1ckt27Q0zVdhf9Ajy8onP7cJNZlDXbgJNE9ef52e8w/Skunk_Anansie_Group_Shot__Black_2019.jpg?format=2500w",
+        "colorT": "white"
       },
       {
         "eventDateName": "Tónleikar",
@@ -111,7 +118,8 @@
         "eventHallName": "Silfurberg",
         "size": "81",
         "rating": "8.1",
-        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9911.jpg?cache=637207436118270000"
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9911.jpg?cache=637207436118270000",
+        "colorT": "black"
       },
       {
         "eventDateName": "Tónleikar",
@@ -121,7 +129,8 @@
         "eventHallName": "",
         "size": "47",
         "rating": "4.7",
-        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9756.jpg?cache=637228269208700000"
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9756.jpg?cache=637228269208700000",
+        "colorT": "white"
       },
       {
         "eventDateName": "Tónleikar",
@@ -131,7 +140,8 @@
         "eventHallName": "",
         "size": "47",
         "rating": "4.7",
-        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9756.jpg?cache=637228269208700000"
+        "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9756.jpg?cache=637228269208700000",
+        "colorT": "white"
       }
     ]
   }
