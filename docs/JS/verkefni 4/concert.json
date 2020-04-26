@@ -9,7 +9,7 @@
         "size": "76",
         "rating": "7.6",
         "imageSource": "https://www.sinfonia.is/media/myndir-2019/20/c270x270/saeunn-og-shostakovitsj-kassi.jpg",
-        "colorT": "white"
+        "colorT": "fuchsia"
       },
       {
         "eventDateName": "Föstudagsfreistingar 09.01",
@@ -20,7 +20,7 @@
         "size": "38",
         "rating": "3.8",
         "imageSource": "https://www.fjallabyggd.is/static/news/lg/43758066_2156712921314121_6086727918455619584_o.jpg",
-        "colorT": "black"
+        "colorT": "yellow"
       },
       {
         "eventDateName": "Tónleikar",
@@ -42,7 +42,7 @@
         "size": "93",
         "rating": "9.3",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9792.jpg?cache=637194457825970000",
-        "colorT": "blue"
+        "colorT": "cornsilk"
       },
       {
         "eventDateName": "Tónleikar",
@@ -53,7 +53,7 @@
         "size": "47",
         "rating": "4.7",
         "imageSource": "https://www.ifsport.is/skrar/frettamyndir/jonjonssonnet.jpg",
-        "colorT": "white"
+        "colorT": "initial"
       },
       {
         "eventDateName": "Tónleikar",
@@ -64,7 +64,7 @@
         "size": "99",
         "rating": "9.9",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9245.jpg?cache=637196971952500000",
-        "colorT": "white"
+        "colorT": "green"
       },
       {
         "eventDateName": "Tónleikar",
@@ -75,7 +75,7 @@
         "size": "99",
         "rating": "9.9",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Feature_9117.jpg?cache=637213447155230000",
-        "colorT": "white"
+        "colorT": "blueviolet"
       },
       {
         "eventDateName": "Tónleikar",
@@ -97,7 +97,7 @@
         "size": "99",
         "rating": "9.9",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9774.jpg?cache=637181494115130000",
-        "colorT": ""
+        "colorT": "aqua"
       },
       {
         "eventDateName": "Tónleikar",
@@ -130,7 +130,7 @@
         "size": "47",
         "rating": "4.7",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9756.jpg?cache=637228269208700000",
-        "colorT": "white"
+        "colorT": "cornsilk"
       },
       {
         "eventDateName": "Tónleikar",
@@ -141,7 +141,7 @@
         "size": "47",
         "rating": "4.7",
         "imageSource": "https://cdn.tix.is/tix/EventImages/Event_9756.jpg?cache=637228269208700000",
-        "colorT": "white"
+        "colorT": "cornsilk"
       }
     ]
   }

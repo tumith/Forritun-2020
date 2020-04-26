@@ -1,4 +1,3 @@
-
 let SIZE = 99;
 let DATESTART, DATEEND;
 const endpoint = 'https://raw.githubusercontent.com/tumith/Forritun-2020/master/docs/JS/verkefni 4/concert.json';
@@ -64,11 +63,11 @@ function displayMatches() {
 
     matchArray.forEach(tonleikar => {
         let tonleikar_node = document.createElement('li');
-        tonleikar_node.textContent = tonleikar.name + ', ' + tonleikar.eventDateName;
-        tonleikar_node.style = `background-image: url(${tonleikar.imageSource}); background-size: cover; color: ${tonleikar.color};`;
+        // tonleikar_node.textContent = tonleikar.name + ', ' + tonleikar.eventDateName;
+        tonleikar_node.style = `background-image: url(${tonleikar.imageSource}); background-size: cover; color: ${tonleikar.colorT};`;
         let stadsetning_node = document.createElement('p');
-        stadsetning_node.textContent = tonleikar.userGroupName + " \n " + tonleikar.eventHallName + " \n " + tonleikar.dateOfShow;
-        stadsetning_node.style =  `text-size-adjust: 1em; color: ${tonleikar.color};`;
+        stadsetning_node.textContent = tonleikar.name + ' \n ' + tonleikar.eventDateName + ' \n ' + tonleikar.userGroupName + " \n " + tonleikar.eventHallName + " \n " + tonleikar.dateOfShow;
+        stadsetning_node.style =  `text-size-adjust: 1em; color: ${tonleikar.colorT}; font-size: 14px; font-weight: bold;`;
         
         //hér þarf að sína allt sem pasar við tölurnar sem verða í listanum %% NAFN Á LISTANUM %%
         tonleikar_node.appendChild(stadsetning_node);
