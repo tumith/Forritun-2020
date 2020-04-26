@@ -67,8 +67,8 @@ function displayMatches() {
         tonleikar_node.textContent = tonleikar.name + ', ' + tonleikar.eventDateName;
         tonleikar_node.style = `background-image: url(${tonleikar.imageSource}); background-size: cover; color: ${tonleikar.color};`;
         let stadsetning_node = document.createElement('p');
-        stadsetning_node.style =  `text-size-adjust: 1em; color: ${tonleikar.color};`;
         stadsetning_node.textContent = tonleikar.userGroupName + " \n " + tonleikar.eventHallName + " \n " + tonleikar.dateOfShow;
+        stadsetning_node.style =  `text-size-adjust: 1em; color: ${tonleikar.color};`;
         
         //hér þarf að sína allt sem pasar við tölurnar sem verða í listanum %% NAFN Á LISTANUM %%
         tonleikar_node.appendChild(stadsetning_node);
