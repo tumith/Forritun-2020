@@ -1,13 +1,45 @@
-# install.packages("expss")
+# ----- instals -----
+
+install.packages("expss")
+install.packages("DataCombine")
+
+# -------------------
+
+
+# ----- Librarys -----
+
 library(expss)
+library(DataCombine)
+
+# -------------------
 
 summa <- summary(Copy_of_Corona_Virus_Stats[1])
 
+
+# ----- Functions -----------
+
+foreach(
+        ...,
+        .combine,
+        .init,
+        .final = NULL,
+        .inorder = TRUE,
+        .multicombine = FALSE,
+        .maxcombine = if (.multicombine) 100 else 2,
+        .errorhandling = c("stop", "remove", "pass"),
+        .packages = NULL,
+        .export = NULL,
+        .noexport = NULL,
+        .verbose = FALSE
+)
+
+# ---------------------------
 
 # --------- Data ------------- 
 
 RandT <- cro(Copy_of_Corona_Virus_Stats[1], Copy_of_Corona_Virus_Stats[2])
 RandT
+
 # ---- Or / eða ------
 Copy_of_Corona_Virus_Stats[1:2]
 
@@ -53,17 +85,13 @@ table(sum_tablatureT, Copy_of_Corona_Virus_Stats[2])
 
 
 
-# ----------- Liður 2 í VERKEFNI 4 b -----------------------------------------------------------------------
-#         Ekki búið
+# ----------- Liður 2 og 3 í VERKEFNI 4 b -----------------------------------------------------------------------
+#         2 búið, 3 ekki búið
 
+# ----- Gögn fyrir Lið 2 -----
 sum_tablatureD <- Copy_of_Corona_Virus_Stats[5] / 100
 sum_tablatureR <- Copy_of_Corona_Virus_Stats[8] / 100
-
-sum_tablatureD
-sum_tablatureR
-
-# (print_x <- table(sum_tablatureD,sum_tablatureR))
-# print(print_x)
+# ----------------------------
 
 original_numbers <- cat(sprintf("<set Total Deaths = \"%s\", Recoveries = \"%s\" ></set>\n", Copy_of_Corona_Virus_Stats$`Total Deaths`, Copy_of_Corona_Virus_Stats$Recoveries))
 
@@ -73,13 +101,24 @@ total_Deaths <- cat(sprintf("<set Total Deaths = \"%s\", New Total Deaths = \"%s
 
 recoveries <- cat(sprintf("<set Recoveries = \"%s\", New Recoveries = \"%s\" ></set>\n", Copy_of_Corona_Virus_Stats$Recoveries, sum_tablatureR$Recoveries))
 
-Copy_of_Corona_Virus_Stats[1:2]
+Copy_of_Corona_Virus_Stats[5:8]
 
 
 # --------------------------------------------------------------------------------------------------------
 
 
-# ----------- prints -----------------------------------------------------------------------
+
+# ----------- Liður 3 í VERKEFNI 4 b -----------------------------------------------------------------------
+
+# which(Copy_of_Corona_Virus_Stats$`Total Confirmed` != dplyr::lag(Copy_of_Corona_Virus_Stats$`Total Confirmed`))
+
+foreach
+
+# --------------------------------------------------------------------------------------------------------
+
+
+
+# ----------- prints -------------------------------------------------------------------------------------
 
 summa
 RandT
@@ -93,8 +132,10 @@ new_numbers_dividing
 # --------------------------------------------------------------------------------------------------------
 
 
-# ----------- Removes -----------------------------------------------------------------------
-
-
+# ----------- Removes ------------------------------------------------------------------------------------
 remove(x)
 remove(y)
+remove(Out)
+
+
+
