@@ -1,4 +1,12 @@
 # covid_19_clean_complete comes from "https://www.kaggle.com/imdevskp/corona-virus-report"
+
+# --  bara ef þörf er á að downloada ------------
+
+install.packages("expss")
+
+# -----------------------------------------------
+
+
 library(expss)
 
 summary(covid_19_clean_complete)
@@ -17,3 +25,4 @@ cat(sprintf("country = \"%s\" ,
             covid_19_clean_complete$Recovered
             )
     )
+
