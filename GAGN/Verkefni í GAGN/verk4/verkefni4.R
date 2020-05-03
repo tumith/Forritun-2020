@@ -135,6 +135,7 @@ new_numbers_dividing
 # ----------- Removes ------------------------------------------------------------------------------------
 remove(x)
 remove(y)
+remove(B)
 remove(Out)
 
 
