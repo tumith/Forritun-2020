@@ -15,9 +15,9 @@ cro(covid_19_clean_complete[2])
 
 cat(sprintf("country = \"%s\" , 
             DATE = \"%s\" , 
-            Confirmed = \"%f\" , 
-            Total Deaths = \"%f\" , 
-            Recoveries = \"%f\"\n", 
+            Confirmed = \"%s\" , 
+            Total Deaths = \"%s\" , 
+            Recoveries = \"%s\" \n \n", 
             covid_19_clean_complete$`Country/Region`, 
             covid_19_clean_complete$Date,
             covid_19_clean_complete$Confirmed,
