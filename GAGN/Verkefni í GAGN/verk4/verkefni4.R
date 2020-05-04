@@ -9,7 +9,28 @@
 # ------------------------------------------------------------------------------------------------------------
 
 
+# ----------------------- 4 a -------------------------------------------------------------------
+name <- c("Gillian Keene", "Guðmundur Jónsson", "Marla Dröfn Diego", "Konráð Guðmundsson", "Renate Hertzenslust", "Sigurður Sívertssen")
+id <- c(1001, 1002, 1003, 1004, 1005, 1006)
+finalrateEdlis <- c(9.4, 7.5, 9.5, 5.0, 6.6, 8.1)
+finalrateEfna <- c(8.4,6.9,5.5,9.8,4.0,8.8)
+finalrateMath <- c(9.0,6.7,8.5,5.0,9.0,9.7)
+cratuation_date <- as.Date(c("2012-05-25", "2013-12-17", "2014-05-15", "2014-05-15", "2014-12-19", "2015-05-27"))
+        
+my_data_frame <- data.frame(
+        name,
+        id,
+        finalrateEdlis,
+        finalrateEfna,
+        finalrateMath,
+        cratuation_date,
+        
+        stringsAsFactors = FALSE
+)
 
+print(my_data_frame)
+
+# ------------------------------------------------------------------------------------------------------------
 
 
 
