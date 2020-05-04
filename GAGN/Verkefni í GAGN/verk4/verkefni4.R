@@ -1,10 +1,23 @@
 
+# ----- instals -----
 
+install.packages("expss")
+install.packages("DataCombine")
+
+# -------------------
+
+
+# ----- Librarys -----
+
+library(expss)
+library(DataCombine)
+
+# -------------------
 
 
 # ----------------------- note, Mikil vægt -------------------------------------------------------------------
 
-# verkefnið er í world_covid19_history.csv
+# verkefni 4 b er í world_covid19_history.csv
 
 # ------------------------------------------------------------------------------------------------------------
 
@@ -36,20 +49,9 @@ print(my_data_frame)
 
 
 
-# ----- instals -----
-
-install.packages("expss")
-install.packages("DataCombine")
-
-# -------------------
+#----------------------- Hér er mín tilruan til að gera verkefni 4b í R ---------------------------------------------------------
 
 
-# ----- Librarys -----
-
-library(expss)
-library(DataCombine)
-
-# -------------------
 
 summa <- summary(Copy_of_Corona_Virus_Stats[1])
 
@@ -98,22 +100,6 @@ sum_tablatureT <- Copy_of_Corona_Virus_Stats[2] / 100
 
 differance <- sum_tablatureT < Copy_of_Corona_Virus_Stats[2]
 table(sum_tablatureT, Copy_of_Corona_Virus_Stats[2])
-
-# -----------------------------------------
-
-
-# ----- Leið til að plota án expss --------
-#              Not working
-
-# x <- Copy_of_Corona_Virus_Stats[1]
-# y <- Copy_of_Corona_Virus_Stats[2]
-# d <- read.table("data.txt", header = T)
-
-# plot(d$y~d$x, ann = FALSE, type = "n")
-
-# lines(d$y~d$x, lwd = 2)
-
-# title("Data", xlab = "X", ylab = "Y")
 
 # -----------------------------------------
 
@@ -176,5 +162,5 @@ remove(y)
 remove(B)
 remove(Out)
 
-
+#--------------------------------------------------------------------------------------------------------------------------------
 
